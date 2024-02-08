@@ -14,15 +14,9 @@ function App() {
   return (
     <div className="App">
       {loading ? (
-        <div className="loading">
-          ToDo App
-          <br />
-          <br />
-          Loading...
-        </div>
+        <ClimbingBoxLoader color="#36d7b7" />
       ) : (
         <TodoWrapper className="TodoWrapper" />
-        // <ClimbingBoxLoader color="#36d7b7" />
       )}
     </div>
   );
