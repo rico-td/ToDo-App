@@ -7,7 +7,7 @@ const TodoForm = (addTodo) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(value);
+    addTodo(value);
   };
   return (
     <form className="TodoForm">

@@ -7,11 +7,18 @@
 }
 
 :root {
-  --purpleBright: rgb(110, 52, 216);
+  --purpleBright: rgb(87, 214, 214);
+  --purpleDark: rgb(11, 6, 37);
+  --borders: rgb(44, 87, 102);
+  --text: rgb(181, 181, 190);
+  --aczent: #12343b;
+
+  /* BACKUP */
+  /* --purpleBright: rgb(110, 52, 216);
   --purpleDark: rgb(11, 6, 37);
   --borders: #34207c;
   --text: rgb(181, 181, 190);
-  --aczent: #12343b;
+  --aczent: #12343b; */
 }
 
 body {
@@ -22,8 +29,10 @@ body {
   align-items: flex-start;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(95, 44, 161);
+  background-color: rgb(27, 33, 117);
 }
+
+/* ---------------------------------------------------- */
 
 .App {
   background-color: var(--purpleDark);
@@ -33,50 +42,5 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  margin-top: 100px;
-}
-
-.todo-input {
-  background: transparent;
-  border-style: none;
-  background-color: transparent;
-  color: var(--text);
-  border: 1px solid var(--borders);
-  border-right: none;
-  letter-spacing: 2px;
-  padding-left: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.todo-wrapper {
-  /* background-color: red; */
-  display: flex;
-  align-items: stretch;
-  width: 80%;
-  height: 20%;
-  transform: translateY(-20px);
-}
-
-.TodoForm {
-  /* background-color: greenyellow; */
-  display: grid;
-  grid-template-columns: 1fr 100px;
-  width: 100%;
-}
-
-.todo-btn {
-  /* width: 20%; */
-  color: white;
-  background-color: var(--purpleBright);
-  border-style: none;
-  letter-spacing: 1px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.todo-btn:hover {
-  cursor: pointer;
+  margin-top: 50px;
 }
