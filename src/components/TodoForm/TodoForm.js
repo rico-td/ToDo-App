@@ -11,7 +11,7 @@ const TodoForm = () => {
         placeholder="What is the task today?"
       />
       <button className={style.submitButton} type="submit">
-        Add Task
+        Add Task!
       </button>
     </form>
   );

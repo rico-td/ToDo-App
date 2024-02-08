@@ -1,7 +1,17 @@
-import styles from "./Login.module.css";
+import React, { useEffect, useState } from "react";
 
-function Impressum() {
-  return <div className={styles.mainContainer}>Login</div>;
-}
+const Login = () => {
+  const [isLoading, setisLoading] = useState(true);
 
-export default Impressum;
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setisLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return <div>{isLoading ? "Loading..." : "Login Page"}</div>;
+};
+
+export default Login;
