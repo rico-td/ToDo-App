@@ -2,6 +2,7 @@ import "./App.css";
 import TodoWrapper from "./components/TodoWrapper/TodoWrapper.js";
 import React, { useEffect, useState } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader.js";
+import DotLoader from "react-spinners/DotLoader.js";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -14,7 +15,7 @@ function App() {
   return (
     <div className="App">
       {loading ? (
-        <ClimbingBoxLoader color="#36d7b7" />
+        <DotLoader color="#4911c1" />
       ) : (
         <TodoWrapper className="TodoWrapper" />
       )}

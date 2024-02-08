@@ -7,18 +7,18 @@
 }
 
 :root {
-  --purpleBright: rgb(87, 214, 214);
+  /* --purpleBright: rgb(87, 214, 214);
   --purpleDark: rgb(11, 6, 37);
   --borders: rgb(44, 87, 102);
   --text: rgb(181, 181, 190);
-  --aczent: #12343b;
+  --aczent: #12343b; */
 
   /* BACKUP */
-  /* --purpleBright: rgb(110, 52, 216);
+  --purpleBright: rgb(110, 52, 216);
   --purpleDark: rgb(11, 6, 37);
   --borders: #34207c;
   --text: rgb(181, 181, 190);
-  --aczent: #12343b; */
+  --aczent: #12343b;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
   align-items: flex-start;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(27, 33, 117);
+  background-color: var(--purpleBright);
 }
 
 /* ---------------------------------------------------- */
@@ -42,7 +42,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
   margin-top: 50px;
 }
 
@@ -50,4 +49,9 @@ body {
   color: var(--text);
   font-weight: bold;
   text-transform: uppercase;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
 }
