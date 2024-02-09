@@ -1,5 +1,5 @@
 // --- COMPONENTS
-import StandardButton from "../buttons/std-btn/StandardButton";
+import { StandardButton } from "./Buttons";
 
 // --- DATA; FUNCTIONS
 
@@ -22,7 +22,6 @@ const Navbar = () => {
 
 export default Navbar;
 
-//  style={navStyle}
+// style={navStyle}
 // const navStyle = {
-//   getGridTemplateColumn: style,
-// };
+// getGridTemplateColumn: style,

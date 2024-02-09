@@ -1,12 +1,16 @@
-import "./App.css";
-import TodoWrapper from "./components/TodoWrapper/TodoWrapper.js";
-import React, { useEffect, useState } from "react";
+// -------------- STYLE -----------------
+import "./Home.module.css";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader.js";
-import Navbar from "./components/navbar/Navbar.js";
-import { Routes, Route } from "react-router-dom";
-import Login from "./pages/Login.js";
 
-function App() {
+// -------------- LOGIC -----------------
+import { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+
+// -------------- ELEMENTS -----------------
+import Navbar from "../components/navbar";
+import { TodoWrapper } from "../components/TodoWrapper";
+
+function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -14,11 +18,13 @@ function App() {
       setLoading(false);
     }, 2000);
   }, []);
+
   return (
-    <div className="App">
+    <div className="home">
       {loading ? (
         <>
           <ClimbingBoxLoader
+            style={{}}
             className="loadingIcon"
             color="#0B0625"
             size={20}
@@ -26,11 +32,6 @@ function App() {
         </>
       ) : (
         <>
-          <Routes>
-            <Route path="/Login" element={<Login />} />
-            <Route path="/todo_kanban" element={<App />} />
-          </Routes>
-
           <Navbar className="navbar"></Navbar>
           <TodoWrapper className="TodoWrapper" />
         </>
@@ -39,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

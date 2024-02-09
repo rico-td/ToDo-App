@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import style from "./TodoForm.module.css";
 
 const TodoForm = () => {

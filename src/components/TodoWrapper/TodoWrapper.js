@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import style from "./TodoWrapper.module.css";
-import TodoForm from "../TodoForm/TodoForm";
+import TodoForm from "../TodoForm";
 import { v4 as uuidv4 } from "uuid";
 
 const TodoWrapper = () => {
@@ -12,9 +11,3 @@ const TodoWrapper = () => {
 };
 
 export default TodoWrapper;
-
-// setTodos([
-//   ...todos,
-//   { id: uuidv4(), task: todo, completed: false, isEditing: false },
-// ]);
-// console.log(todos);
