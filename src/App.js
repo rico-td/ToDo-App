@@ -28,6 +28,7 @@ function App() {
         <>
           <Routes>
             <Route path="/Login" element={<Login />} />
+            <Route path="/todo_kanban" element={<App />} />
           </Routes>
 
           <Navbar className="navbar"></Navbar>
