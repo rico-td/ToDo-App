@@ -1,11 +1,8 @@
+import { Link } from "react-router-dom";
 import styles from "./StandardButton.module.css";
 
 const StandardButton = ({ link, name }) => {
-  return (
-    <a href={link} target="_blank" rel="noreferrer">
-      {name}
-    </a>
-  );
+  return <Link to={link}>{name}</Link>;
 };
 
 export default StandardButton;

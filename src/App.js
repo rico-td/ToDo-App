@@ -2,8 +2,10 @@ import "./App.css";
 import TodoWrapper from "./components/TodoWrapper/TodoWrapper.js";
 import React, { useEffect, useState } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader.js";
-import DotLoader from "react-spinners/DotLoader.js";
 import Navbar from "./components/navbar/Navbar.js";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.js";
+import Login from "./pages/Login.js";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -11,7 +13,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 2000);
   }, []);
   return (
     <div className="App">
@@ -25,6 +27,11 @@ function App() {
         </>
       ) : (
         <>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Login" element={<Login />} />
+          </Routes>
+
           <Navbar className="navbar"></Navbar>
           <TodoWrapper className="TodoWrapper" />
         </>

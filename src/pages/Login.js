@@ -1,17 +1,36 @@
+import "../App.css";
+import TodoWrapper from "../components/TodoWrapper/TodoWrapper.js";
 import React, { useEffect, useState } from "react";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader.js";
+import Navbar from "../components/navbar/Navbar.js";
+import { Routes, Route } from "react-router-dom";
 
-const Login = () => {
-  const [isLoading, setisLoading] = useState(true);
+function Login() {
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setisLoading(false);
+    setTimeout(() => {
+      setLoading(false);
     }, 2000);
-
-    return () => clearTimeout(timer);
   }, []);
-
-  return <div>{isLoading ? "Loading..." : "Login Page"}</div>;
-};
+  return (
+    <div className="App">
+      {loading ? (
+        <>
+          <ClimbingBoxLoader
+            className="loadingIcon"
+            color="#0B0625"
+            size={20}
+          />
+        </>
+      ) : (
+        <>
+          <Navbar className="navbar"></Navbar>
+          <h1>Welcome to Login</h1>
+        </>
+      )}
+    </div>
+  );
+}
 
 export default Login;

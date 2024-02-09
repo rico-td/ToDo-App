@@ -9,12 +9,12 @@ import styles from "./Navbar.module.css";
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
-      <StandardButton link="https://www.google.com" name="Home" />
+      <StandardButton link="/" name="Home" />
 
       <div className={styles.menu}>
-        <StandardButton link="https://www.google.com" name="About" />
-        <StandardButton link="https://www.google.com" name="Artwork" />
-        <StandardButton link="https://www.google.com" name="Contact" />
+        <StandardButton link="/Login" name="Login" />
+        <StandardButton link="" name="About" />
+        <StandardButton link="" name="Contact" />
       </div>
     </div>
   );
