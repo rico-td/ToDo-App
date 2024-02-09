@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 // -------------- ELEMENTS -----------------
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import { TodoWrapper } from "../components/TodoWrapper";
 
 function Home() {
