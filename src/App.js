@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader.js";
 import Navbar from "./components/navbar/Navbar.js";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home.js";
 import Login from "./pages/Login.js";
 
 function App() {
@@ -28,7 +27,6 @@ function App() {
       ) : (
         <>
           <Routes>
-            <Route path="/" element={<Home />} />
             <Route path="/Login" element={<Login />} />
           </Routes>
 
