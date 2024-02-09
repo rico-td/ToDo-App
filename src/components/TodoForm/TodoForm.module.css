@@ -2,10 +2,13 @@
   /* background-color: greenyellow; */
   display: grid;
   grid-template-columns: 1fr 100px;
+  /* align-items: center; */
   width: 100%;
+  height: 50px;
 }
 
 .todoInput {
+  border: 1px solid red;
   background: transparent;
   border-style: none;
   background-color: transparent;
@@ -16,6 +19,9 @@
   padding-left: 15px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  border-top: none;
+  border-left: none;
+  margin-right: 50px;
 }
 
 .todoInput:focus {
@@ -23,8 +29,7 @@
 }
 
 .submitButton {
-  /* width: 20%; */
-  color: white;
+  color: var(--text);
   background-color: var(--purpleBright);
   border-style: none;
   font-family: Arial, Helvetica, sans-serif;

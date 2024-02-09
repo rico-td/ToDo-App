@@ -14,44 +14,42 @@
   --aczent: #12343b; */
 
   /* BACKUP */
-  --purpleBright: rgb(110, 52, 216);
+  --purpleBright: rgb(73, 17, 193);
   --purpleDark: rgb(11, 6, 37);
   --borders: #34207c;
   --text: rgb(181, 181, 190);
   --aczent: #12343b;
+  --background: rgb(92, 92, 160);
 }
 
 body {
   /* background-color: rgb(172, 140, 209); */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--purpleBright);
+  background-color: var(--background);
 }
 
 /* ---------------------------------------------------- */
 
 .App {
-  background-color: var(--purpleDark);
-  width: 500px;
-  height: 250px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+  align-items: center; */
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(92, 92, 160);
 }
 
-.loading {
-  color: var(--text);
-  font-weight: bold;
-  text-transform: uppercase;
+.loadingIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-h1 {
-  font-size: 50px;
-  color: white;
+.navbar {
+}
+
+.TodoWrapper {
+  width: 100vw;
+  transform: translate(-50%, -50%);
 }

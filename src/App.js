@@ -3,6 +3,7 @@ import TodoWrapper from "./components/TodoWrapper/TodoWrapper.js";
 import React, { useEffect, useState } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader.js";
 import DotLoader from "react-spinners/DotLoader.js";
+import Navbar from "./components/navbar/Navbar.js";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -15,9 +16,18 @@ function App() {
   return (
     <div className="App">
       {loading ? (
-        <DotLoader color="#4911c1" />
+        <>
+          <ClimbingBoxLoader
+            className="loadingIcon"
+            color="#0B0625"
+            size={20}
+          />
+        </>
       ) : (
-        <TodoWrapper className="TodoWrapper" />
+        <>
+          <Navbar className="navbar"></Navbar>
+          <TodoWrapper className="TodoWrapper" />
+        </>
       )}
     </div>
   );
