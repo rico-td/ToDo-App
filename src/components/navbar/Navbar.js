@@ -13,13 +13,12 @@ const Navbar = () => {
 
       <div className={styles.menu}>
         <StandardButton link="/Login" name="Login" />
-        <StandardButton link="" name="About" />
-        <StandardButton link="" name="Contact" />
+        <StandardButton link="/About" name="About" />
+        <StandardButton link="/Contact" name="Contact" />
       </div>
     </div>
   );
 };
-
 export default Navbar;
 
 // style={navStyle}

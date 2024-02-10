@@ -1,10 +1,7 @@
-import TodoWrapper from "../components/TodoWrapper";
-import { ClimbingBoxLoader } from "react-spinners/ClimbingBoxLoader";
-import Navbar from "../components/Navbar";
-import LoadingScreen from "../utils/LoadingScreen";
+import { useParams } from "react-router-dom";
 
 function Login() {
-  <Navbar className="navbar"></Navbar>;
+  const { id } = useParams();
+  return <h1>Welcome to {id}</h1>;
 }
-
 export default Login;

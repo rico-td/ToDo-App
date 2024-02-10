@@ -4,7 +4,8 @@ import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader.js";
 
 // -------------- LOGIC -----------------
 import { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+import { Login, About, Contact } from "./";
 
 // -------------- ELEMENTS -----------------
 import Navbar from "../components/Navbar";
@@ -32,8 +33,9 @@ function Home() {
         </>
       ) : (
         <>
-          <Navbar className="navbar"></Navbar>
-          <TodoWrapper className="TodoWrapper" />
+          {/* <Navbar className="navbar"></Navbar> */}
+          <h1>Home</h1>
+          <Link to="/"></Link>
         </>
       )}
     </div>

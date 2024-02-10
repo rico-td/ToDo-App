@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* --purpleBright: rgb(87, 214, 214);
+  --purpleDark: rgb(11, 6, 37);
+  --borders: rgb(44, 87, 102);
+  --text: rgb(181, 181, 190);
+  --aczent: #12343b; */
+
+  /* BACKUP */
+  --purpleBright: rgb(73, 17, 193);
+  --purpleDark: rgb(11, 6, 37);
+  --borders: #34207c;
+  --text: rgb(181, 181, 190);
+  --aczent: #12343b;
+  --background: rgb(92, 92, 160);
+}
+
+body {
+  /* background-color: rgb(172, 140, 209); */
+  background-color: var(--background);
+}
