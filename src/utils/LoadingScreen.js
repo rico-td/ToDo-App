@@ -13,7 +13,7 @@ const LoadingScreen = () => {
   return loading ? (
     <>
       <ClimbingBoxLoader
-        style={{}}
+        style={{ width: 100 }}
         className="width: 100px"
         color="#0B0625"
         size={20}

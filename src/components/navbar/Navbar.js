@@ -1,20 +1,19 @@
 // --- COMPONENTS
-import { StandardButton } from "./Buttons";
+import { StandardButton, HomeButton } from "./Buttons";
 
 // --- DATA; FUNCTIONS
 
 // --- CSS
-import styles from "./Navbar.module.css";
+import style from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
-    <div className={styles.navbar}>
-      <StandardButton link="/" name="Home" />
+    <div className={style.navbar}>
+      <HomeButton link="/" name="Home" />
 
-      <div className={styles.menu}>
+      <div className={style.menu}>
         <StandardButton link="/Login" name="Login" />
         <StandardButton link="/About" name="About" />
-        <StandardButton link="/Contact" name="Contact" />
       </div>
     </div>
   );

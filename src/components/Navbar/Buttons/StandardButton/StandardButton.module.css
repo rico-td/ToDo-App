@@ -1,17 +1,18 @@
-a {
+.StandardButton {
+  /* background-color: rgb(205, 173, 124); */
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 15px;
-  color: var(--text);
-  font-family: "Audiowide", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
+  color: var(--purpleBright);
 }
 
-a:hover {
+.StandardButton:hover {
   /* text-decoration: underline; */
   line-height: 5px;
 }

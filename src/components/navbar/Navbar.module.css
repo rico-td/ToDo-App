@@ -1,18 +1,21 @@
 .navbar {
-  /* border: 2px solid red; */
+  --navbarHeight: 60px;
 
-  display: grid;
-  grid-template-columns: 1fr 350px;
+  /* border: solid red; */
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
   padding-left: 20px;
   padding-right: 20px;
-  height: 70px;
+  height: var(--navbarHeight);
   background-color: var(--purpleDark);
 }
 
 .menu {
-  /* border: 1px solid green; */
+  /* border: solid green; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }

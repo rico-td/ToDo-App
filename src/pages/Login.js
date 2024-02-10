@@ -1,7 +1,11 @@
-import { useParams } from "react-router-dom";
+import LoadingScreen from "../utils/LoadingScreen";
 
 function Login() {
-  const { id } = useParams();
-  return <h1>Welcome to {id}</h1>;
+  return (
+    <div className="Login">
+      <LoadingScreen />
+      <h1 style={{ textAlign: "center", marginTop: "50px" }}>LOGIN PAGE</h1>
+    </div>
+  );
 }
 export default Login;

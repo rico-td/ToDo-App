@@ -8,7 +8,7 @@
 }
 
 .todoInput {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background: transparent;
   border-style: none;
   background-color: transparent;
@@ -16,7 +16,7 @@
   border: 1px solid var(--borders);
   border-right: none;
   letter-spacing: 2px;
-  padding-left: 15px;
+  padding-left: 35px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   border-top: none;

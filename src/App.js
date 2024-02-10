@@ -1,40 +1,17 @@
-// -------------- STYLE -----------------
-import "./App.css";
-import "./index.css";
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader.js";
-
-// -------------- LOGIC -----------------
-import { Routes, Route, Link } from "react-router-dom";
-import { Home, Login, About, Contact } from "./pages";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Home, About, Login } from "./pages";
 import Navbar from "./components/Navbar";
-
-// -------------- ELEMENTS -----------------
 
 function App() {
   return (
-    <div className="App">
-      {/* <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/Login">Login</Link>
-        </li>
-        <li>
-          <Link to="/About">About</Link>
-        </li>
-      </ul> */}
-
+    <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Navbar />}>
-          <Route path="/Login" element={<Login />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-        </Route>
-
-        <Route path="*" />
+        <Route path="/" element={<Home />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/About" element={<About />} />
       </Routes>
-    </div>
+    </BrowserRouter>
   );
 }
 
