@@ -1,7 +1,7 @@
 {
   "name": "todo_kanban",
   "version": "0.1.0",
-  "homepage": "https:// rico-td.github.io/ToDo-App",
+  "homepage": "https://rico-td.github.io/Todo-App",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
