@@ -7,9 +7,15 @@ function App() {
     <HashRouter>
       <Navbar />
       <Routes>
-        <Route path="/ToDo-App" element={<Home />} />
-        <Route path="/ToDo-App/Login" element={<Login />} />
-        <Route path="/ToDo-App/About" element={<About />} />
+        <Route path="https://rico-td.github.io/ToDo-App/" element={<Home />} />
+        <Route
+          path="https://rico-td.github.io/ToDo-App/Login"
+          element={<Login />}
+        />
+        <Route
+          path="https://rico-td.github.io/ToDo-App/About"
+          element={<About />}
+        />
       </Routes>
     </HashRouter>
   );
