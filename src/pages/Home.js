@@ -1,6 +1,5 @@
 // -------------- STYLE -----------------
 import style from "./Home.module.css";
-import LoadingScreen from "../utils/LoadingScreen";
 // -------------- LOGIC -----------------
 
 // -------------- ELEMENTS -----------------
