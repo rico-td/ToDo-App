@@ -12,14 +12,8 @@ const Navbar = () => {
       <HomeButton link="/" name="Home" />
 
       <div className={style.menu}>
-        <StandardButton
-          link="https://rico-td.github.io/ToDo-App/Login"
-          name="Login"
-        />
-        <StandardButton
-          link="https://rico-td.github.io/ToDo-App/About"
-          name="About"
-        />
+        <StandardButton link="/Login" name="Login" />
+        <StandardButton link="/About" name="About" />
       </div>
     </div>
   );
