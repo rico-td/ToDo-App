@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader.js";
 
-const LoadingScreen = () => {
+const LoadingScreen = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 5000);
   }, []);
 
   return loading ? (
@@ -19,7 +19,9 @@ const LoadingScreen = () => {
         size={20}
       />
     </>
-  ) : null;
+  ) : (
+    children
+  );
 };
 
 export default LoadingScreen;

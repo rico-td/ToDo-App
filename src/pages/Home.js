@@ -8,13 +8,19 @@ import { TodoWrapper } from "../components/TodoWrapper";
 function Home() {
   return (
     <div className={style.Home}>
-      <h1
+      <h2
         style={{
+          textTransform: "uppercase",
           textAlign: "center",
+          marginTop: "50px",
         }}
       >
-        HOME PAGE
-      </h1>
+        Welcome to <br />{" "}
+        <span>
+          <span className={style.S}>#S</span>wift
+          <span classname={style.L}>L</span>ist.
+        </span>
+      </h2>
       <TodoWrapper />
     </div>
   );

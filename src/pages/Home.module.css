@@ -1,6 +1,23 @@
 .Home {
   height: calc(100vh - var(--navbarHeight));
   height: 100vh;
-  padding: 20px;
+
   /* background: red; */
+}
+
+.Home h2 {
+  color: black;
+  font-family: "Michroma", sans-serif;
+  font-size: 15px;
+}
+
+.Home span {
+  color: var(--purpleBright);
+  font-size: 65px;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+span .S {
+  font-size: 100px;
+  line-height: 1px;
 }

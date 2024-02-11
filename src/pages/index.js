@@ -4,25 +4,25 @@ export { default as About } from "./About";
 
 // export { default as About } from "./About";
 
-// // EXPORT
+// EXPORT
 // export default MainFunction;
 // export { name };
 // export { age };
 // export { Function };
 
-// // FASTER
+// FASTER
 // export default MainFunction;
 // export { name, age, Function };
 
-// // IMPORT
+// IMPORT
 // import MainFunction from "./components/MainFunction";
 // import { name } from "./components";
 // import { age } from "./components";
 // import { Function } from "./components";
 
-// // FASTER
+// FASTER
 // import MainFunction from "./components/MainFunction";
 // import { name, age, Function } from "./components";
 
-// // SPEEDY GONZALES
+// SPEEDY GONZALES
 // import MainFunction, { name, age, Function } from "./components";
