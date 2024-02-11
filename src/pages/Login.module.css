@@ -1,4 +1,7 @@
-/* h1 {
+.Login {
+  font-family: "Michroma", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-} */
+  align-items: center;
+}

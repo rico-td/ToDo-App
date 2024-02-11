@@ -7,7 +7,7 @@ const LoadingScreen = ({ children }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 3000);
   }, []);
 
   return loading ? (
@@ -15,7 +15,7 @@ const LoadingScreen = ({ children }) => {
       <ClimbingBoxLoader
         style={{ width: 100 }}
         className="width: 100px"
-        color="#0B0625"
+        color="#71CAD6"
         size={20}
       />
     </>

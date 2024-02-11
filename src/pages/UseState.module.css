@@ -1,0 +1,26 @@
+.UseState {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 span {
+  color: var(--purpleBright);
+  font-size: 35px;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+ul li {
+  line-height: 30px;
+}
+
+p {
+  color: var(--purpleBright);
+  font-size: 20px;
+  margin-top: 20px;
+}

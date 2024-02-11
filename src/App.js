@@ -1,5 +1,5 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { Home, About, Login } from "./pages";
+import { Home, UseState, Login } from "./pages";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -9,7 +9,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/UseState" element={<UseState />} />
+        <Route path="*" />
       </Routes>
     </HashRouter>
   );

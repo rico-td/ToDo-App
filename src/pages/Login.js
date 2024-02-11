@@ -1,10 +1,12 @@
 import LoadingScreen from "../utils/LoadingScreen";
+import style from "./Login.module.css";
+import SignInForm from "../components/SignInForm/SignInForm";
 
 function Login() {
   return (
-    <div className="Login">
+    <div className={style.Login}>
       <LoadingScreen>
-        <h1 style={{ textAlign: "center", marginTop: "50px" }}>LOGIN PAGE</h1>
+        <SignInForm />
       </LoadingScreen>
     </div>
   );

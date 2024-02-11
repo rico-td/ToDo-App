@@ -7,10 +7,11 @@
 }
 
 :root {
-  --purpleBright: rgb(73, 17, 193);
+  --purpleBright: rgb(113, 202, 214);
   --purpleDark: rgb(11, 6, 37);
   --borders: #34207c;
   --text: rgb(181, 181, 190);
   --aczent: #12343b;
   --background: rgb(92, 92, 160);
+  font-family: "Michroma", sans-serif;
 }

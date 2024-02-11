@@ -4,15 +4,17 @@
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 15px;
   font-family: "Michroma", sans-serif;
+  /* font-family: "Protest Guerrilla", sans-serif; */
   text-transform: uppercase;
   font-weight: bold;
-  color: var(--purpleBright);
+  color: white;
 }
 
 .StandardButton:hover {
   /* text-decoration: underline; */
+  color: var(--purpleBright);
   line-height: 5px;
 }

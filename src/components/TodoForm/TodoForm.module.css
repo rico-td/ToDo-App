@@ -13,11 +13,10 @@
   border-style: none;
   background-color: transparent;
   color: var(--text);
-  border: 1px solid var(--borders);
+  border: 0.5px solid var(--purpleBright);
   border-right: none;
   letter-spacing: 2px;
   padding-left: 35px;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   border-top: none;
   border-left: none;
@@ -29,10 +28,9 @@
 }
 
 .submitButton {
-  color: var(--text);
+  color: var(--purpleDark);
   background-color: var(--purpleBright);
   border-style: none;
-  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
