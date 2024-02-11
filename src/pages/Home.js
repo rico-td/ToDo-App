@@ -18,7 +18,7 @@ function Home() {
         Welcome to <br />{" "}
         <span>
           <span className={style.S}>#S</span>wift
-          <span classname={style.L}>L</span>ist
+          <span className={style.L}>L</span>ist
           <span className={style.dot}>.</span>
         </span>
       </h2>

@@ -11,12 +11,10 @@ function Login() {
   const [likeText, setLikeText] = useState("Like");
   const [disLikeText, setdisLikeText] = useState("Dont Like");
   const [buttonClicked, setButtonClicked] = useState(false);
-  const [stayLogged, setStayLogged] = useState(false);
 
   const handleButtonClick = () => {
     setButtonClicked(true);
     playClickSound();
-    setStayLogged(!stayLogged);
   };
 
   const playClickSound = () => {

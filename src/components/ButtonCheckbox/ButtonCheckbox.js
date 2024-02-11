@@ -20,7 +20,7 @@ const ButtonCheckbox = () => {
         />
         <div className={style.slider}></div>
       </label>
-      {console.log(stayLogged)};
+      {console.log("stay logged in:" + stayLogged)};
     </div>
   );
 };
