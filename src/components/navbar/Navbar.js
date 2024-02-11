@@ -12,8 +12,8 @@ const Navbar = () => {
       <HomeButton link="/" name="Home" />
 
       <div className={style.menu}>
-        <StandardButton link="/Login" name="Login" />
-        <StandardButton link="/About" name="About" />
+        <StandardButton link="/ToDo-App/Login" name="Login" />
+        <StandardButton link="/ToDo-App/About" name="About" />
       </div>
     </div>
   );

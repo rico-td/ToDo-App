@@ -7,9 +7,9 @@ function App() {
     <HashRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/ToDo-App" element={<Home />} />
+        <Route path="/ToDo-App/Login" element={<Login />} />
+        <Route path="/ToDo-App/About" element={<About />} />
       </Routes>
     </HashRouter>
   );
