@@ -1,6 +1,39 @@
 .Login {
   font-family: "Michroma", sans-serif;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.like,
+.dislike {
+  width: 100px;
+  padding: 3px;
+  margin: 5px;
+  background-color: var(--purpleBright);
+  border-style: none;
+  border-radius: 10px;
+  font-family: "Michroma", sans-serif;
+}
+
+.like:hover,
+.dislike:hover {
+  background-color: var(--purpleDark);
+  color: var(--purpleBright);
+}
+
+.dislike {
+}
+
+.dislike:active {
+  transform: translateY(100px);
+  transition: transform 0.05s;
+}
+
+.rightSide {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
