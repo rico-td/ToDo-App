@@ -4,7 +4,6 @@ import SignInForm from "../components/SignInForm/SignInForm";
 import { useState } from "react";
 import gif from "../assets/img/goodfellas-henry-hill.gif";
 import dislikeSound from "../assets/sound/das-gibt-ne-anzeige-von-karin-ritter-160kbps.mp3";
-<assets />;
 
 function Login() {
   const [count, setCount] = useState(37);
@@ -33,7 +32,6 @@ function Login() {
               setCount(count + 1);
               setLikeText("Thanks");
               alert("Hallo und Danke von der LoginSeite");
-              console.log(stayLogged);
             }}
             onMouseUp={() => {
               setTimeout(() => {
@@ -44,11 +42,6 @@ function Login() {
           >
             {likeText}
           </button>
-          {/* <audio
-            id="clickSound"
-            src="../assets/vids/emotional-damage-meme(1).mp3"
-          ></audio> */}
-
           <button
             id="buttonS"
             onClick={() => {
