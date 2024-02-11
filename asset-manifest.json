@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ToDo-App/static/css/main.7795a588.css",
-    "main.js": "/ToDo-App/static/js/main.331bcb76.js",
+    "main.js": "/ToDo-App/static/js/main.c9811e71.js",
     "static/media/goodfellas-henry-hill.gif": "/ToDo-App/static/media/goodfellas-henry-hill.22fccae2bcb4fa40968c.gif",
     "index.html": "/ToDo-App/index.html",
     "main.7795a588.css.map": "/ToDo-App/static/css/main.7795a588.css.map",
-    "main.331bcb76.js.map": "/ToDo-App/static/js/main.331bcb76.js.map"
+    "main.c9811e71.js.map": "/ToDo-App/static/js/main.c9811e71.js.map"
   },
   "entrypoints": [
     "static/css/main.7795a588.css",
-    "static/js/main.331bcb76.js"
+    "static/js/main.c9811e71.js"
   ]
 }
