@@ -11,10 +11,12 @@ function Login() {
   const [likeText, setLikeText] = useState("Like");
   const [disLikeText, setdisLikeText] = useState("Dont Like");
   const [buttonClicked, setButtonClicked] = useState(false);
+  const [stayLogged, setStayLogged] = useState(false);
 
   const handleButtonClick = () => {
     setButtonClicked(true);
     playClickSound();
+    setStayLogged(!stayLogged);
   };
 
   const playClickSound = () => {
@@ -32,6 +34,8 @@ function Login() {
             onClick={() => {
               setCount(count + 1);
               setLikeText("Thanks");
+              alert("Hallo und Danke von der LoginSeite");
+              console.log(stayLogged);
             }}
             onMouseUp={() => {
               setTimeout(() => {
@@ -55,7 +59,6 @@ function Login() {
             onMouseDown={() => {
               setdisLikeText("Nope :P");
               handleButtonClick();
-              playClickSound();
             }}
             onMouseUp={() => {
               setTimeout(() => {
