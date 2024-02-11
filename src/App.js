@@ -1,17 +1,17 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, About, Login } from "./pages";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/About" element={<About />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
