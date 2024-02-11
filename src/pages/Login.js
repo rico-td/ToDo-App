@@ -63,7 +63,7 @@ function Login() {
               style={{
                 width: "250px",
                 position: "absolute",
-                transform: "translateY(200px)",
+                transform: "translateX(-330px)",
               }}
               src={gif}
               alt="Bild"
