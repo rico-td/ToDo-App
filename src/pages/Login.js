@@ -3,7 +3,8 @@ import style from "./Login.module.css";
 import SignInForm from "../components/SignInForm/SignInForm";
 import { useState } from "react";
 import gif from "../assets/img/goodfellas-henry-hill.gif";
-// import dislikeSound from "../assets/vids/";
+import dislikeSound from "../assets/sound/emotional-damage-meme(1).mp3";
+<assets />;
 
 function Login() {
   const [count, setCount] = useState(37);
@@ -13,6 +14,12 @@ function Login() {
 
   const handleButtonClick = () => {
     setButtonClicked(true);
+    playClickSound();
+  };
+
+  const playClickSound = () => {
+    const audio = new Audio(dislikeSound);
+    audio.play();
   };
 
   return (
@@ -48,6 +55,7 @@ function Login() {
             onMouseDown={() => {
               setdisLikeText("Nope :P");
               handleButtonClick();
+              playClickSound();
             }}
             onMouseUp={() => {
               setTimeout(() => {
