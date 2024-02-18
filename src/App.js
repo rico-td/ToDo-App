@@ -1,5 +1,5 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { Home, UseState, Login } from "./pages";
+import { Home, Login, UseState } from "./pages";
 import Navbar from "./components/Navbar";
 
 function App() {

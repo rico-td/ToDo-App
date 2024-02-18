@@ -1,4 +1,4 @@
-import LoadingScreen from "../utils/LoadingScreen";
+import LoadingScreen from "../hooks/LoadingScreen";
 import style from "./Login.module.css";
 import SignInForm from "../components/SignInForm/SignInForm";
 import { useState } from "react";
@@ -11,14 +11,14 @@ function Login() {
   const [disLikeText, setdisLikeText] = useState("Dont Like");
   const [buttonClicked, setButtonClicked] = useState(false);
 
-  const handleButtonClick = () => {
-    setButtonClicked(true);
-    playClickSound();
-  };
-
   const playClickSound = () => {
     const audio = new Audio(dislikeSound);
     audio.play();
+  };
+
+  const handleButtonClick = () => {
+    setButtonClicked(true);
+    playClickSound();
   };
 
   return (
@@ -76,4 +76,12 @@ function Login() {
     </div>
   );
 }
+export default Login;
+
+import React from "react";
+
+function Login() {
+  return <div></div>;
+}
+
 export default Login;
